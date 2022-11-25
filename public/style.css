@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #041562;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-family: 'Fredoka', cursive;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  width: 190px; 
+  height: 100px; 
+  color: papayawhip;
+  background-color: #11468F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #5D8BF4;
+}
+
+#seleccionar-ataque {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    width: 200px;
+    background: #eeeeee;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border-radius: 20px;
+    color: #11468F;
+    border-color: #11468F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    gap: 20px;
+}
+
+.hijo-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #11468F;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    user-select: none;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 10px;
+}
+#mapa {
+    border: 2px solid white;
+}
+
+@media (max-width: 590px) {
+    .tarjetas, .tarjetas-ataques {
+        display: flex;
+        flex-direction: column;
+    }
+    /* #ver-mapa div {
+       display: flex; 
+       align-items: center;
+       flex-direction: column;
+    } */
+}
+
